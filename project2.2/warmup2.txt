@@ -1,0 +1,36 @@
+; 2015-09-28T17:31:58+0000
+; Warmup Test
+; Test launched. Please check every minute for update.
+[Test]
+type=warmup
+testId=1443461518258
+testFile=test.1443461518258.log
+
+[Minute 1]
+rps=794.14
+
+[Minute 2]
+rps=859.81
+
+[Minute 3]
+rps=781.21
+
+[Minute 4]
+rps=797.00
+
+[Minute 5]
+rps=812.02
+
+[Load Generator]
+awsId=937674222190
+andrewId=minxu
+amiId=ami-312b5154
+instanceId=i-3ee8a3d7
+instanceType=m3.medium
+publicHostname=ec2-52-3-248-184.compute-1.amazonaws.com
+ipAddress=52.3.248.184
+
+[Elastic Load Balancer]
+dns=project2elb-1282890257.us-east-1.elb.amazonaws.com
+
+; Test finished

@@ -1,0 +1,25 @@
+Round Robin in Practice folder:
+Contains Main.java and LoadBalancer.java 
+LoadBalancer.java was done in round-robin manner 
+
+Improve the Load Balancing Strategy folder:
+Contains Main.java, DataCenterInstance.java and LoadBalancer.java
+DataCenterInstance.java was modified for holding fields of cpu utilization
+LoadBalancer.java was able to deliver requests first to low cpu utilization DCIs
+
+Monitor Data Center Instance Health folder:
+Contains Main.java, DataCenterInstance.java and LoadBalancer.java
+DataCenterInstance.java was modified for holding fields of cpu utilization and DCI DNS
+LoadBalancer.java was able to stop unhealthy DCIs and create new healthy ones, it used round-robin
+
+Root folder:
+Contains all java files
+DataCenterInstance.java was modified for holding fields of cpu utilization and DCI DNS
+LoadBalancer.java used improved strategy to send requests first to low cpu utilization DCIs and was able to stop unhealthy DCIs and start new ones
+
+Commands for run:
+export CLASSPATH=/home/ubuntu/loadbalancer/all_jar/*:/home/ubuntu/loadbalancer/ (all jar files are in folder all_jar)
+Javac *.java
+Javac Main.java
+sudo -E Java -cp $CLASSPATH Main
+
